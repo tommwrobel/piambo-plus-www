@@ -1,7 +1,7 @@
 @import 'system/settings';
 @import 'system/mixins';
 
-header, main {
+header {
     margin-bottom: 40px;
 }
 
@@ -21,6 +21,10 @@ header, main {
         font-size: 2rem;
         font-weight: 700;
         margin: 0;
+    }
+
+    a {
+        margin: 10px 0 10px 10px;
     }
 }
 
@@ -89,6 +93,10 @@ a .img-container img {
 
 .product-section {
 
+    img {
+        @include border-radius($global-border-radius);
+    }
+
     .product-container {
         display: flex;
         flex-direction: column;
@@ -142,10 +150,6 @@ a .img-container img {
             }
         }
 
-        img {
-            @include border-radius($global-border-radius);
-        }
-
         h2 {
             font-size: 1.0rem;
             line-height: 1.4rem;
@@ -177,24 +181,51 @@ a .img-container img {
 
 .news-section {
 
-    h2 {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        margin-bottom: 15px;
+    img {
+        @include border-radius($global-border-radius);
     }
 
-    .news-info {
-        color: $color-grey;
-        margin-bottom: 15px;
-    }
+    .news-container {
+        margin-bottom: 30px;
     
-    .more-link {
-        color: $color-primary;
-        text-decoration: underline;
-
-        &:hover {
-            color: $color-secondary;
+        h2 {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            margin-bottom: 15px;
+        }
+    
+        .news-info {
+            color: $color-grey;
+            margin-bottom: 15px;
+        }
+        
+        .more-link {
+            color: $color-primary;
+            text-decoration: underline;
+    
+            &:hover {
+                color: $color-secondary;
+            }
         }
     }
+}
 
+.aboutus-section {
+    color: white;
+    background-color: $color-secondary;
+    padding: 30px 0;
+    margin-bottom: 0;
+
+    img {
+        @include border-radius($global-border-radius);
+    }
+
+    h1, h2 {
+        color: white;
+    }
+
+    p {
+        color: $color-light-grey;
+        text-align: justify;
+    }
 }

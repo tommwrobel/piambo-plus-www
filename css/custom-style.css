@@ -1,4 +1,4 @@
-header, main {
+header {
   margin-bottom: 40px; }
 
 .btn-ico {
@@ -15,6 +15,8 @@ header, main {
     font-size: 2rem;
     font-weight: 700;
     margin: 0; }
+  .section-title a {
+    margin: 10px 0 10px 10px; }
 
 a .img-container img:hover {
   opacity: 0.7; }
@@ -46,6 +48,10 @@ a .img-container img:hover {
   .slider-section img {
     border-radius: 16px; }
 
+.product-section img {
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px; }
 .product-section .product-container {
   display: flex;
   flex-direction: column;
@@ -83,10 +89,6 @@ a .img-container img:hover {
           background-color: #f1c226; }
         .product-section .product-container .img-links-wrapper .tags .tag-red {
           background-color: #d42349; }
-  .product-section .product-container img {
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px; }
   .product-section .product-container h2 {
     font-size: 1.0rem;
     line-height: 1.4rem;
@@ -106,17 +108,38 @@ a .img-container img:hover {
     color: grey;
     text-decoration: line-through; }
 
-.news-section h2 {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  margin-bottom: 15px; }
-.news-section .news-info {
-  color: grey;
-  margin-bottom: 15px; }
-.news-section .more-link {
-  color: #4db04a;
-  text-decoration: underline; }
-  .news-section .more-link:hover {
-    color: #0f2735; }
+.news-section img {
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px; }
+.news-section .news-container {
+  margin-bottom: 30px; }
+  .news-section .news-container h2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 15px; }
+  .news-section .news-container .news-info {
+    color: grey;
+    margin-bottom: 15px; }
+  .news-section .news-container .more-link {
+    color: #4db04a;
+    text-decoration: underline; }
+    .news-section .news-container .more-link:hover {
+      color: #0f2735; }
+
+.aboutus-section {
+  color: white;
+  background-color: #0f2735;
+  padding: 30px 0;
+  margin-bottom: 0; }
+  .aboutus-section img {
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px; }
+  .aboutus-section h1, .aboutus-section h2 {
+    color: white; }
+  .aboutus-section p {
+    color: #e2e2e2;
+    text-align: justify; }
 
 /*# sourceMappingURL=custom-style.css.map */
