@@ -38,13 +38,3 @@ function toggleFaqItem(element) {
     faqArrow.classList.toggle("faq-arrow-open");
     faqItem.classList.toggle("faq-content-open");
 }
-
-/*
-new Glide('.glide', {
-    type: 'carousel',
-    autoplay: 5000,
-    animationDuration: 1000,
-    hoverpause: false,
-    gap: 0,
-    classes: { activeNav: 'bullet-active' }
-}).mount();*/

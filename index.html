@@ -17,7 +17,7 @@
     <header>
         <div class="container">
 
-            <dv class="row logo-menu-section ph-6">
+            <dv class="row logo-menu-section">
 
                 <a href="#">
                     <img src="img/logo-dark.svg" alt="Piambo+" class="logo">
@@ -45,14 +45,21 @@
             </dv>
 
             
-                <div class="row slider-section">
-                    <div class="col">
-                        <a class="img-container" href="#">
+            <div class="row slider-section">
+                <div class="col">
+                    <div class="slider-items">
+                        <a class="img-container slider-item" href="#">
+                            <img src="img/slider.png" alt="slider" class="display-sm-none">
+                            <img src="img/slider-mobile.png" alt="slider" class="display-none display-sm-block">
+                        </a>
+                        
+                        <a class="img-container slider-item" href="#">
                             <img src="img/slider.png" alt="slider" class="display-sm-none">
                             <img src="img/slider-mobile.png" alt="slider" class="display-none display-sm-block">
                         </a>
                     </div>
                 </div>
+            </div>
 
         </div>
     </header>
@@ -267,14 +274,15 @@
 
     </main>
 
-
-
-
-
-    <footer>
+    <footer class="footer-section">
         <div class="container justify-content-md-center">
             <span class="footer-copyrights col-md-12 order-md-2 mv-2">&copy 2020 by Piambo+. All rights reserved.</span>
             <nav class="col-md-12 order-md-1">
+
+                <ul>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Polityka prywatności</a></li>
+                </ul>
 
             </nav>
             <a class="link-top display-md-none" href="#">
@@ -283,6 +291,7 @@
         </div>
     </footer>
 
+    <script src="js/tiny-slider.js"></script>
     <script src="js/script.js"></script>
 
 </body>

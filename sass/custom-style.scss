@@ -85,9 +85,35 @@ a .img-container img {
 .slider-section {
     background-position: center;
     align-items: center;
+    position: relative;
+    @include border-radius($global-border-radius);
+    overflow: hidden;
 
-    img {
-        border-radius: $global-border-radius;
+    .col {
+        padding: 0;
+    }
+
+    .tns-nav {
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+
+        & > button {
+            width: 12px;
+            height: 12px;
+            background: none;
+            border: solid 3px $color-grey;
+            @include border-radius(999px);
+            margin: 5px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .tns-nav-active {
+            border-color: $color-secondary; 
+        }
     }
 }
 
@@ -262,4 +288,43 @@ a .img-container img {
         }
     }
 
+}
+
+.footer-section {
+    width: 100%;
+    padding: 12px 0;
+    background-color: $color-light-grey;
+    z-index: 99;
+    
+    .container, .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 $column-gap;
+
+        .footer-copyrights {
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+
+            ul {
+
+                li {
+                    display: inline;
+                    margin: 10px;
+    
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                    @media (max-width: $breakpoint-medium) {
+                        display: block;
+                        text-align: center;
+                    }
+                } 
+            }
+        }
+    }
 }
