@@ -1,0 +1,34 @@
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&subset=latin-ext&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&subset=latin-ext&display=swap');
+
+@import 'system/settings';
+
+@import 'system/colors';
+@import 'system/reset';
+@import 'system/mixins';
+@import 'system/sizing';
+@import 'system/grid';
+@import 'system/text';
+@import 'system/content';
+@import 'system/form';
+
+* {
+    @include transition(0.2s);
+}
+
+html {   
+    scroll-behavior: smooth;
+}
+
+body {
+    font: normal 1rem $font-stack;
+    color: $color-dark-grey;
+    font-size: $default-font-size;
+}
+
+@import 'components/_navbar';
+@import 'components/_slider';
+@import 'components/_buttons';
+@import 'components/_card';
+@import 'components/_faq';
+@import 'components/_footer';

@@ -1,0 +1,70 @@
+header {
+    .hero {
+        width: 100%;
+        margin-top: 65px;
+
+        .slider-item {
+            width: 100%;
+            background-color: #eef4f7;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        .bullets {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            .bullet {
+                box-sizing: initial;
+                display: inline-block;
+                border: solid 4px darken($color-light-grey, 20%);
+                padding: 0;
+                width: 5px;
+                height: 5px;
+                margin: 0 2px;
+                cursor: pointer;
+                @include border-radius(999px);
+
+                &-active {
+                    @extend .bullet;
+                    border-color: $color-primary;    
+                }
+            }
+        }
+
+        .container {
+            height: 300px;
+            max-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            align-content: center;
+
+            h1, p {
+                text-align: left;
+            }
+
+            .label-txt {
+                font-weight: bold;
+                font-size: 0.9rem;
+                color: $color-primary;
+            }
+
+            .img-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 100%;
+                width: auto;
+            
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

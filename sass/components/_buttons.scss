@@ -1,0 +1,115 @@
+.btn {
+    padding: $button-padding-v $button-padding-h;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    border: solid $button-border-size transparent;
+    @include border-radius($button-border-radius);
+    @include transition(0.2s);
+
+    &-small {
+        @extend .btn;
+        padding: 0.8*$button-padding-v 0.8*$button-padding-h;
+        font-size: 0.9rem;
+        @include border-radius($button-border-radius - 2);
+    }
+
+    &-big {
+        @extend .btn;
+        padding: 1.2*$button-padding-v 1.2*$button-padding-h;
+        font-size: 1.1rem;
+    }
+
+    &-primary {
+        @extend .btn;
+        background-color: $color-primary;
+        color: white;
+
+        &:hover {
+            background-color: darken($color-primary, 5%);
+        }
+    }
+
+    &-secondary {
+        @extend .btn;
+        background-color: $color-secondary;
+        color: white;
+
+        &:hover {
+            background-color: darken($color-secondary, 5%);
+        }
+    }
+
+    &-light {
+        @extend .btn;
+        background-color: white;
+        color: $color-dark-grey;
+
+        &:hover {
+            color: $color-primary;
+            background-color: darken(white, 5%);
+        }
+    }
+
+    &-primary-outlined {
+        @extend .btn;
+        background: none;
+        border-color: $color-primary;
+        color: $color-primary;
+
+        &:hover {
+            border-color: darken($color-primary, 5%);
+            background-color: darken($color-primary, 5%);
+            color: white;
+        }
+    }
+
+    &-secondary-outlined {
+        @extend .btn;
+        background: none;
+        border-color: $color-secondary;
+        color: $color-secondary;
+
+        &:hover {
+            border-color: darken($color-secondary, 5%);
+            color:darken($color-secondary, 5%);
+        }
+    }
+
+    &-light-outlined {
+        @extend .btn;
+        background: none;
+        border-color: $color-light-grey;
+        color: $color-light-grey;
+
+        &:hover {
+            border-color: #ffffff;
+            color: white;
+        }
+    }
+
+    &-link {
+        @extend .btn;
+        background: none;
+        color: $color-primary;
+        text-decoration: none;
+
+        &:hover {
+            color: darken($color-primary, 5%);
+            text-decoration: underline;
+        }
+    }
+
+    &-link-light {
+        @extend .btn;
+        background: none;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: darken(white, 5%);
+            text-decoration: underline;
+        }
+    }
+}
