@@ -21,10 +21,14 @@ header {
         font-size: 2rem;
         font-weight: 700;
         margin: 0;
+        display: block;
+        text-align: center;
+        line-height: 2.2rem;
     }
 
     a {
-        margin: 10px 0 10px 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
