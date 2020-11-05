@@ -229,3 +229,37 @@ a .img-container img {
         text-align: justify;
     }
 }
+
+.contact-section {
+
+    .contact-info {
+        margin-bottom: $size-unit*8;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $breakpoint-medium) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .contact-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: $size-unit*8;
+
+        .contact-data {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+
+            i {
+                margin-right: 10px;
+                color: $color-primary;
+            }
+        }
+    }
+
+}

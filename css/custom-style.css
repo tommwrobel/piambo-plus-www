@@ -142,4 +142,26 @@ a .img-container img:hover {
     color: #e2e2e2;
     text-align: justify; }
 
+.contact-section .contact-info {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 960px) {
+    .contact-section .contact-info {
+      align-items: center;
+      text-align: center; } }
+.contact-section .contact-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px; }
+  .contact-section .contact-action .contact-data {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 30px; }
+    .contact-section .contact-action .contact-data i {
+      margin-right: 10px;
+      color: #4db04a; }
+
 /*# sourceMappingURL=custom-style.css.map */
